@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/*test*/
+.border{
+    border: 1px solid red;
+  }
+  
+  /*Color*/
+  
+  :root {
+      --color-primary: hsl(185, 75%, 39%);  /*Dark cyan*/
+      --color-secondary:  hsl(229, 23%, 23%);  /*Very dark desaturated blue*/
+      --color-tertiairy:  hsl(227, 10%, 46%);  /*Dark grayish blue*/
+    
+      --color-neutral: hsl(0, 0%, 59%);  /*Dark gray*/
+    }
