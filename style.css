@@ -7,10 +7,28 @@
   
   /*Color*/
   
-  :root {
-      --color-primary: hsl(185, 75%, 39%);  /*Dark cyan*/
-      --color-secondary:  hsl(229, 23%, 23%);  /*Very dark desaturated blue*/
-      --color-tertiairy:  hsl(227, 10%, 46%);  /*Dark grayish blue*/
+:root {
+    --color-primary: hsl(185, 75%, 39%);  /*Dark cyan*/
+    --color-secondary:  hsl(229, 23%, 23%);  /*Very dark desaturated blue*/
+    --color-tertiairy:  hsl(227, 10%, 46%);  /*Dark grayish blue*/
+  
+    --color-neutral: hsl(0, 0%, 59%);  /*Dark gray*/
+}
+
+
+* 
+{
+    margin: 0;
+    padding: 0;
+}
     
-      --color-neutral: hsl(0, 0%, 59%);  /*Dark gray*/
-    }
+body 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    background-color: var(--very-light-gray);
+    
+    min-height: 100vh;
+}
