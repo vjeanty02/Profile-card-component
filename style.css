@@ -1,34 +1,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
-/*test*/
+
+/*=============================================
+=            Test            =
+=============================================*/
 .border{
     border: 1px solid red;
-  }
+}
+/*=====  End of Test  ======*/
   
-  /*Color*/
-  
+
+
+/*=============================================
+=            Colors            =
+=============================================*/
 :root {
     --color-primary: hsl(185, 75%, 39%);  /*Dark cyan*/
     --color-secondary:  hsl(229, 23%, 23%);  /*Very dark desaturated blue*/
     --color-tertiairy:  hsl(227, 10%, 46%);  /*Dark grayish blue*/
   
     --color-neutral: hsl(0, 0%, 59%);  /*Dark gray*/
+
+    --color-white: #fff;  /*White*/  
 }
+/*=====  End of Colors  ======*/
 
 
-* 
+
+/*=============================================
+=            Section display           =
+=============================================*/
+.flex
 {
-    margin: 0;
-    padding: 0;
+  display: flex;
 }
-    
+.flex-around
+{
+  display: flex;
+  justify-content: space-around;
+}
+.flex-column
+{
+  display: flex;
+  flex-direction: column;
+}
+.flex-column-center
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-column-between
+{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+/*=====  End of display  ======*/
+
+
+
+/*=============================================
+=            general            =
+=============================================*/
+* {
+  margin: 0;
+  padding: 0;
+  gap:10px;
+  font-family: 'Kumbh Sans', Courier, monospace;
+}
 body 
+{
+    background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position:-339px -339px, 700px 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+    background-color: var(--color-primary); 
+}
+footer
+{
+    font-size: 12px;
+}
+/*=====  End of general  ======*/
+
+
+
+/*=============================================
+=            main            =
+=============================================*/
+
+.card-profile
+{
+    border-radius: 15px;
+    background-color: var(--color-white);
+    box-shadow: 0px 30px 100px 20px hsla(0, 0%, 1%, 0.095);
+
+}
+.card-profile_container-img
+{
+    width: 350px;
+    height: 140px;
+    background:url(images/bg-pattern-card.svg);
+    border-radius: 15px 15px 0 0;
+}
+.card-profile_container-profile
+{
+    background-color: var(--color-white);
+    margin-top: -65px;
+    border-radius: 50%;
+    display: inline-flex;
+    padding: 5px;
+}
+.card-profile_container-profile img
+{
+    border-radius: 50%;
+}
+.card-profile_container-name
+{
+    padding: 10px 20px 13px 20px;
+    
+}
+.card-profile_container-info
+{
+    border-top: 1px solid rgba(218, 218, 218, 0.658);
+    padding: 22px 30px 23px 30px;
+    width: calc(100% - 60px);
+}
+.card-profile--style-primary
+{
+    color: var( --color-secondary);
+    font-size: 18px;
+}
+.card-profile--style-secondary
+{
+    color: var(--color-tertiairy);
+    font-weight: 400;
+}
+.card-profile_n-followers,.card-profile_n-likes,.card-profile_n-photos
+{
+    font-size: 10px;
+}
+.card-profile_container-info>div
 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
-    background-color: var(--very-light-gray);
-    
-    min-height: 100vh;
+    gap: 5px;
 }
+/*=====  End of main  ======*/
+
+

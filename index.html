@@ -9,31 +9,41 @@
 </head>
 
 
-<body>
+<body class="flex-column-center flex-column-between">
   <header></header>
-  
   <main>
-    <div class="card-profile">
-      Victor Crest
-    26
-    London
-  
-    80K
-    Followers
-  
-    803K
-    Likes
-  
-    1.4K
-    Photos
+    <div class="card-profile flex-column-center">
+      <div class="card-profile_container-img"></div> <!-- container-image-background -->
+
+      <div class="card-profile_container-profile"> <!-- container-image-profile -->
+        <img src="images/image-victor.jpg" alt="image-victor">
+      </div>
+
+      <div class="card-profile_container-name flex-column-center"> 
+        <h1 class="card-profile--style-primary">Victor Crest <span class="card-profile--style-secondary"> 26</span></h1>
+        <p class="card-profile--style-secondary">London</p> 
+      </div>  
+      <div class="card-profile_container-info flex-around"> <!-- container-info -->
+        <div>
+          <h2 class="card-profile--style-primary">80K</h2> 
+          <p class="card-profile_n-followers card-profile--style-secondary">F o l l o w e r s</p> 
+        </div>
+        <div>
+          <h2 class="card-profile--style-primary">803K</h2> 
+          <p class="card-profile_n-likes card-profile--style-secondary">L i k e s</p> 
+        </div>
+        <div>
+          <h2 class="card-profile--style-primary">1.4K</h2> 
+          <p class="card-profile_n-photos card-profile--style-secondary">P h o t o s</p> 
+        </div> 
+      </div>
     </div>
   </main>
 
   <footer>
-    Challenge by <a class="color-secondary" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a class="color-secondary" href="https://www.frontendmentor.io?ref=challenge" target="blank">Frontend Mentor</a>. 
     Coded by <a class="color-secondary" href="https://github.com/vjeanty02/">vjeanty02</a>.
   </footer>
- 
- 
+  
 </body>
 </html>
