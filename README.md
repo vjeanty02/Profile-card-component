@@ -20,6 +20,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Screenshot
 
+![Screenshot (11)](https://user-images.githubusercontent.com/61328054/195995134-0f157588-47b5-48ae-a0e7-89b55252c738.png)
 
 ### Links
 
